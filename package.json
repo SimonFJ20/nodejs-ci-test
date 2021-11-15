@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-server-test",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "start": "node dist/main.js",
+    "dev": "nodemon dist/main.js --ignore public/ --ignore dist/",
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "repository": "https://gitlab.pcvdata.dk/super-team-euxtra/cd-ci-tests-and-examples/nodejs-server-test.git",
+  "author": "SimonFJ20 <simonfromjakobsen@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.7",
+    "jest": "^27.3.1",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.4.4"
+  }
+}
